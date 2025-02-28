@@ -3,7 +3,7 @@
 [![ICLR 2025](https://img.shields.io/badge/ICLR-2025-blue)](https://iclr.cc/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Official implementation for the ICLR 2025 paper **"TFG-FLOW: Training-Free Guidance in Multi-Modal Generative Flow"**
+Official implementation for the ICLR 2025 paper **"TFG-Flow: Training-Free Guidance in Multi-Modal Generative Flow"** by Haowei Lin, Shanda Li, Haotian Ye, Yiming Yang, Stefano Ermon, Yitao Liang, Jianzhu Ma.
 
 ![Teaser Figure](assets/teaser.png) <!-- Replace with actual figure path -->
 
@@ -55,6 +55,12 @@ do
 done
 ```
 
+## 🤝 Contributing
+Contributions welcome! Please open an issue or PR for suggestions/improvements.
+
+## 📧 Contact
+For questions, contact linhaowei@pku.edu.cn or open an issue.
+
 ## 📖 Citation
 ```bibtex
 @inproceedings{tfgflow2025,
@@ -64,31 +70,3 @@ done
   year={2025}
 }
 ```
-
-## 🤝 Contributing
-Contributions welcome! Please open an issue or PR for suggestions/improvements.
-
-## 📧 Contact
-For questions, contact [YOUR_EMAIL] or open an issue.
-
-## License
-MIT License (see [LICENSE](LICENSE))
-```
-
-Key placeholders to replace:
-1. Teaser figure path
-2. Installation commands (PyTorch/CUDA versions)
-3. Dataset download/preprocessing details
-4. Property names in training scripts
-5. Pretrained model links and metrics
-6. Results table with actual numbers
-7. Citation information
-8. Contact information
-
-Tips for completion:
-- Add actual performance numbers from paper
-- Include example generated molecules/structures if applicable
-- Add architecture diagram in assets/
-- Include link to paper PDF when available
-- Add acknowledgments section if needed
-- Include hardware requirements/benchmarks if relevant
