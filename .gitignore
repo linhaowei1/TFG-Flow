@@ -1,0 +1,11 @@
+__pycache__
+runs
+wandb
+trails/ckpts
+trails/results
+storage/ckpts
+storage/results
+storage/datasets
+storage/samples
+storage
+sweep*
