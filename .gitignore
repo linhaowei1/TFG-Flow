@@ -7,5 +7,5 @@ storage/ckpts
 storage/results
 storage/datasets
 storage/samples
-storage
+storage/logs
 sweep*

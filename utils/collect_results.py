@@ -3,7 +3,7 @@ import json
 import numpy as np
 logs = './storage/logs'
 results = os.listdir(logs)
-results = [r for r in results if "'gap'" in r]
+results = [r for r in results if "'mu'" in r]
 
 metrics = {}
 

@@ -1,12 +1,13 @@
-cuda_visible_devices=5
+cuda_visible_devices=0
 
-taus=(0.0005 0.001 0.002 0.004)
-rhos=(0.025 0.05 0.1 0.2)
+taus=(0.016 0.008 0.004 0.002)
+rhos=(0.01 0.02 0.04 0.08)
 for temperature in ${taus[@]};
 do
+cuda_visible_devices=0
 for rho in ${rhos[@]};
 do
-for seed in 42 43 44;
+for seed in 42;
 do
     cmd="CUDA_VISIBLE_DEVICES=$cuda_visible_devices python sample_mols.py \
         --seed $seed \
@@ -16,10 +17,10 @@ do
         --cls_embed_size 64 \
         --e_embed_size 256 \
         --h_embed_size 256 \
-        --sample_bs 256 \
+        --sample_bs 128 \
         --sample_tot_num 4096 \
-        --flow_ckpt ../flow_models/best.pth \
-        --target_property mu \
+        --flow_ckpt ./storage/flow_model.pth \
+        --target_property lumo \
         --dataset qm9 \
         --wandb False \
         --k 512 \
@@ -33,8 +34,9 @@ do
         --guidance_weight 1 \
         --wandb False"
     echo $cmd
-    eval $cmd 
-    cuda_visible_devices=`expr $cuda_visible_devices + 1`
+    eval $cmd &
+    cuda_visible_devices=$((cuda_visible_devices+1))
 done
 done
+wait
 done
