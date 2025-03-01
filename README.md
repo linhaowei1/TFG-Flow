@@ -32,6 +32,8 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 
 ## 🧠 Model Training
 
+If you don't want to train the models by yourself, just refer to `./storage` for pre-trained checkpoints!
+
 ### 1. Train Base Flow Model
 ```bash
 bash scripts/train_flow.sh
