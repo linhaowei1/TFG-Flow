@@ -1,4 +1,4 @@
-cuda_visible_devices=(3 4 6)
+cuda_visible_devices=(3 4 5 6)
 taus=(0.5 1 2 4)
 rhos=(0.0025 0.005 0.01 0.02)
 for temperature in ${taus[@]};
@@ -6,7 +6,7 @@ do
 for rho in ${rhos[@]};
 do
 cuda_idx=0
-for seed in 42 43 44;
+for seed in 44;
 do
     cuda_visible_device=${cuda_visible_devices[$cuda_idx]}
     cmd="CUDA_VISIBLE_DEVICES=$cuda_visible_devices python sample_mols.py \
@@ -37,6 +37,6 @@ do
     eval $cmd &
     cuda_idx=`expr $cuda_idx + 1`
 done
-wait
 done
+wait
 done

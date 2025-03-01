@@ -19,6 +19,9 @@ args = setup_sampling()
 if args.wandb:
     wandb.init(project=args.project, config=args, name=args.log_dir, entity=args.entity)
 
+if os.path.exists(f'{args.log_dir}/results.json'):
+    print(f'{args.log_dir}/results.json already exists. Skipping...')
+    exit()
 
 os.makedirs(f'{args.log_dir}', exist_ok=True)
 

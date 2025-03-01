@@ -55,6 +55,8 @@ do
 done
 ```
 
+Notice that the results of homo, lumo, and gap are for Hartree. If you'd like to get meV results, please convert them using `1 Hartree = 27,211.4 meV`.
+
 ## 🤝 Contributing
 Contributions welcome! Please open an issue or PR for suggestions/improvements.
 
