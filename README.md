@@ -7,7 +7,7 @@
 
 ![Teaser Figure](assets/teaser.png) <!-- Replace with actual figure path -->
 
-Official implementation for the ICLR 2025 paper **"TFG-Flow: Training-Free Guidance in Multi-Modal Generative Flow"** by Haowei Lin et al.
+Official implementation for the ICLR 2025 paper **"TFG-Flow: Training-Free Guidance in Multi-Modal Generative Flow"** by Haowei Lin, Shanda Li, Haotian Ye, Yiming Yang, Stefano Ermon, Yitao Liang, Jianzhu Ma.
 
 ## 📖 Table of Contents
 - [TFG-FLOW: Training-Free Guidance in Multi-Modal Generative Flow](#tfg-flow-training-free-guidance-in-multi-modal-generative-flow)
@@ -22,10 +22,12 @@ Official implementation for the ICLR 2025 paper **"TFG-Flow: Training-Free Guida
     - [Training Pipeline](#training-pipeline)
     - [1. Train Base Flow Model](#1-train-base-flow-model)
     - [2. Train Guidance Classifier](#2-train-guidance-classifier)
-    - [3. (Optional) Train Oracle Model](#3-optional-train-oracle-model)
+    - [3. Train Oracle Model](#3-train-oracle-model)
   - [🔮 Inference with Guidance](#-inference-with-guidance)
     - [Batch Generation](#batch-generation)
   - [🗃️ Pre-trained Models](#️-pre-trained-models)
+  - [🤝 Contributing](#-contributing)
+  - [📖 Citation](#-citation)
   - [📧 Contact](#-contact)
 
 ## 🌟 Overview
@@ -87,7 +89,7 @@ bash scripts/train_flow.sh
 bash scripts/train_guide_clf.sh  =
 ```
 
-### 3. (Optional) Train Oracle Model
+### 3. Train Oracle Model
 ```bash
 bash scripts/train_oracle.sh  
 ```
@@ -121,7 +123,7 @@ Access our pre-trained checkpoints:
 ├── flow_models.pth       # Base flow checkpoints
 ├── guide_clf_ckpt.zip # Guidance predictors
 └── oracle_clf_ckpt.zip     # Target property predictors
-
+```
 
 ## 🤝 Contributing
 
