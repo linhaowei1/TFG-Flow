@@ -86,7 +86,7 @@ bash scripts/train_flow.sh
 
 ### 2. Train Guidance Classifier
 ```bash
-bash scripts/train_guide_clf.sh  =
+bash scripts/train_guide_clf.sh
 ```
 
 ### 3. Train Oracle Model
